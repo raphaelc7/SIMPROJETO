@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OrcamentoDataSet" targetNamespace="http://tempuri.org/OrcamentoDataSet.xsd" xmlns:mstns="http://tempuri.org/OrcamentoDataSet.xsd" xmlns="http://tempuri.org/OrcamentoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SimProjetoConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="SimProjetoConnectionString (Settings)" PropertyReference="ApplicationSettings.SimProjeto.Properties.Settings.GlobalReference.Default.SimProjetoConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OrcamentoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OrcamentoDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OrcamentoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Materiais" msprop:Generator_RowEvHandlerName="MateriaisRowChangeEventHandler" msprop:Generator_RowDeletedName="MateriaisRowDeleted" msprop:Generator_RowDeletingName="MateriaisRowDeleting" msprop:Generator_RowEvArgName="MateriaisRowChangeEvent" msprop:Generator_TablePropName="Materiais" msprop:Generator_RowChangedName="MateriaisRowChanged" msprop:Generator_UserTableName="Materiais" msprop:Generator_RowChangingName="MateriaisRowChanging" msprop:Generator_RowClassName="MateriaisRow" msprop:Generator_TableClassName="MateriaisDataTable" msprop:Generator_TableVarName="tableMateriais">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_UserColumnName="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" type="xs:int" />
+              <xs:element name="I_Orcamento" msprop:Generator_ColumnPropNameInTable="I_OrcamentoColumn" msprop:Generator_ColumnPropNameInRow="I_Orcamento" msprop:Generator_UserColumnName="I_Orcamento" msprop:Generator_ColumnVarNameInTable="columnI_Orcamento" type="xs:int" minOccurs="0" />
+              <xs:element name="S_Material" msprop:Generator_ColumnPropNameInTable="S_MaterialColumn" msprop:Generator_ColumnPropNameInRow="S_Material" msprop:Generator_UserColumnName="S_Material" msprop:Generator_ColumnVarNameInTable="columnS_Material" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="D_Valor" msprop:Generator_ColumnPropNameInTable="D_ValorColumn" msprop:Generator_ColumnPropNameInRow="D_Valor" msprop:Generator_UserColumnName="D_Valor" msprop:Generator_ColumnVarNameInTable="columnD_Valor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="D_Quantidade" msprop:Generator_ColumnPropNameInTable="D_QuantidadeColumn" msprop:Generator_ColumnPropNameInRow="D_Quantidade" msprop:Generator_UserColumnName="D_Quantidade" msprop:Generator_ColumnVarNameInTable="columnD_Quantidade" type="xs:decimal" minOccurs="0" />
+              <xs:element name="D_ValorTotal" msprop:Generator_ColumnPropNameInTable="D_ValorTotalColumn" msprop:Generator_ColumnPropNameInRow="D_ValorTotal" msprop:Generator_UserColumnName="D_ValorTotal" msprop:Generator_ColumnVarNameInTable="columnD_ValorTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_Unidade" msprop:Generator_ColumnPropNameInTable="S_UnidadeColumn" msprop:Generator_ColumnPropNameInRow="S_Unidade" msprop:Generator_UserColumnName="S_Unidade" msprop:Generator_ColumnVarNameInTable="columnS_Unidade" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Orcamento" msprop:Generator_RowEvHandlerName="OrcamentoRowChangeEventHandler" msprop:Generator_RowDeletedName="OrcamentoRowDeleted" msprop:Generator_RowDeletingName="OrcamentoRowDeleting" msprop:Generator_RowEvArgName="OrcamentoRowChangeEvent" msprop:Generator_TablePropName="Orcamento" msprop:Generator_RowChangedName="OrcamentoRowChanged" msprop:Generator_UserTableName="Orcamento" msprop:Generator_RowChangingName="OrcamentoRowChanging" msprop:Generator_RowClassName="OrcamentoRow" msprop:Generator_TableClassName="OrcamentoDataTable" msprop:Generator_TableVarName="tableOrcamento">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_UserColumnName="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" type="xs:int" />
+              <xs:element name="S_Nome" msprop:Generator_ColumnPropNameInTable="S_NomeColumn" msprop:Generator_ColumnPropNameInRow="S_Nome" msprop:Generator_UserColumnName="S_Nome" msprop:Generator_ColumnVarNameInTable="columnS_Nome" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="A_Data" msprop:Generator_ColumnPropNameInTable="A_DataColumn" msprop:Generator_ColumnPropNameInRow="A_Data" msprop:Generator_UserColumnName="A_Data" msprop:Generator_ColumnVarNameInTable="columnA_Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="I_Cliente" msprop:Generator_ColumnPropNameInTable="I_ClienteColumn" msprop:Generator_ColumnPropNameInRow="I_Cliente" msprop:Generator_UserColumnName="I_Cliente" msprop:Generator_ColumnVarNameInTable="columnI_Cliente" type="xs:int" minOccurs="0" />
+              <xs:element name="S_Nome_Cliente" msprop:Generator_ColumnPropNameInTable="S_Nome_ClienteColumn" msprop:Generator_ColumnPropNameInRow="S_Nome_Cliente" msprop:Generator_UserColumnName="S_Nome_Cliente" msprop:Generator_ColumnVarNameInTable="columnS_Nome_Cliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_Outros" msprop:Generator_ColumnPropNameInTable="S_OutrosColumn" msprop:Generator_ColumnPropNameInRow="S_Outros" msprop:Generator_UserColumnName="S_Outros" msprop:Generator_ColumnVarNameInTable="columnS_Outros" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="B_Projeto" msprop:Generator_ColumnPropNameInTable="B_ProjetoColumn" msprop:Generator_ColumnPropNameInRow="B_Projeto" msprop:Generator_UserColumnName="B_Projeto" msprop:Generator_ColumnVarNameInTable="columnB_Projeto" type="xs:string" minOccurs="0" />
+              <xs:element name="S_Contrato" msprop:Generator_ColumnPropNameInRow="S_Contrato" msprop:Generator_ColumnPropNameInTable="S_ContratoColumn" msprop:Generator_ColumnVarNameInTable="columnS_Contrato" msprop:Generator_UserColumnName="S_Contrato" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Profissionais" msprop:Generator_RowEvHandlerName="ProfissionaisRowChangeEventHandler" msprop:Generator_RowDeletedName="ProfissionaisRowDeleted" msprop:Generator_RowDeletingName="ProfissionaisRowDeleting" msprop:Generator_RowEvArgName="ProfissionaisRowChangeEvent" msprop:Generator_TablePropName="Profissionais" msprop:Generator_RowChangedName="ProfissionaisRowChanged" msprop:Generator_UserTableName="Profissionais" msprop:Generator_RowChangingName="ProfissionaisRowChanging" msprop:Generator_RowClassName="ProfissionaisRow" msprop:Generator_TableClassName="ProfissionaisDataTable" msprop:Generator_TableVarName="tableProfissionais">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_UserColumnName="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" type="xs:int" />
+              <xs:element name="I_Orcamento" msprop:Generator_ColumnPropNameInTable="I_OrcamentoColumn" msprop:Generator_ColumnPropNameInRow="I_Orcamento" msprop:Generator_UserColumnName="I_Orcamento" msprop:Generator_ColumnVarNameInTable="columnI_Orcamento" type="xs:int" minOccurs="0" />
+              <xs:element name="S_Profissional" msprop:Generator_ColumnPropNameInTable="S_ProfissionalColumn" msprop:Generator_ColumnPropNameInRow="S_Profissional" msprop:Generator_UserColumnName="S_Profissional" msprop:Generator_ColumnVarNameInTable="columnS_Profissional" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="D_Valor" msprop:Generator_ColumnPropNameInTable="D_ValorColumn" msprop:Generator_ColumnPropNameInRow="D_Valor" msprop:Generator_UserColumnName="D_Valor" msprop:Generator_ColumnVarNameInTable="columnD_Valor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="D_Quantidade" msprop:Generator_ColumnPropNameInTable="D_QuantidadeColumn" msprop:Generator_ColumnPropNameInRow="D_Quantidade" msprop:Generator_UserColumnName="D_Quantidade" msprop:Generator_ColumnVarNameInTable="columnD_Quantidade" type="xs:decimal" minOccurs="0" />
+              <xs:element name="D_ValorTotal" msprop:Generator_ColumnPropNameInTable="D_ValorTotalColumn" msprop:Generator_ColumnPropNameInRow="D_ValorTotal" msprop:Generator_UserColumnName="D_ValorTotal" msprop:Generator_ColumnVarNameInTable="columnD_ValorTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_Tipo" msprop:Generator_ColumnPropNameInTable="S_TipoColumn" msprop:Generator_ColumnPropNameInRow="S_Tipo" msprop:Generator_UserColumnName="S_Tipo" msprop:Generator_ColumnVarNameInTable="columnS_Tipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Materiais" />
+      <xs:field xpath="mstns:Codigo" />
+    </xs:unique>
+    <xs:unique name="Orcamento_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Orcamento" />
+      <xs:field xpath="mstns:Codigo" />
+    </xs:unique>
+    <xs:unique name="Profissionais_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Profissionais" />
+      <xs:field xpath="mstns:Codigo" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="OrcamentoMateriais" msdata:parent="Orcamento" msdata:child="Materiais" msdata:parentkey="Codigo" msdata:childkey="I_Orcamento" msprop:Generator_UserParentTable="Orcamento" msprop:Generator_UserChildTable="Materiais" msprop:Generator_RelationVarName="relationOrcamentoMateriais" msprop:Generator_ChildPropName="GetMateriaisRows" msprop:Generator_ParentPropName="OrcamentoRow" msprop:Generator_UserRelationName="OrcamentoMateriais" />
+      <msdata:Relationship name="OrcamentoProfissionais" msdata:parent="Orcamento" msdata:child="Profissionais" msdata:parentkey="Codigo" msdata:childkey="I_Orcamento" msprop:Generator_UserParentTable="Orcamento" msprop:Generator_UserChildTable="Profissionais" msprop:Generator_RelationVarName="relationOrcamentoProfissionais" msprop:Generator_ChildPropName="GetProfissionaisRows" msprop:Generator_UserRelationName="OrcamentoProfissionais" msprop:Generator_ParentPropName="OrcamentoRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ContratoDataSet" targetNamespace="http://tempuri.org/ContratoDataSet.xsd" xmlns:mstns="http://tempuri.org/ContratoDataSet.xsd" xmlns="http://tempuri.org/ContratoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ContratoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ContratoDataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ContratoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Contrato" msprop:Generator_RowClassName="ContratoRow" msprop:Generator_RowEvHandlerName="ContratoRowChangeEventHandler" msprop:Generator_RowDeletedName="ContratoRowDeleted" msprop:Generator_RowDeletingName="ContratoRowDeleting" msprop:Generator_RowEvArgName="ContratoRowChangeEvent" msprop:Generator_TablePropName="Contrato" msprop:Generator_RowChangedName="ContratoRowChanged" msprop:Generator_UserTableName="Contrato" msprop:Generator_RowChangingName="ContratoRowChanging" msprop:Generator_TableClassName="ContratoDataTable" msprop:Generator_TableVarName="tableContrato">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo" msprop:Generator_UserColumnName="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" type="xs:string" minOccurs="0" />
+              <xs:element name="S_Contrato" msprop:Generator_UserColumnName="S_Contrato" msprop:Generator_ColumnPropNameInTable="S_ContratoColumn" msprop:Generator_ColumnPropNameInRow="S_Contrato" msprop:Generator_ColumnVarNameInTable="columnS_Contrato" type="xs:string" minOccurs="0" />
+              <xs:element name="S_Nome" msprop:Generator_UserColumnName="S_Nome" msprop:Generator_ColumnPropNameInTable="S_NomeColumn" msprop:Generator_ColumnPropNameInRow="S_Nome" msprop:Generator_ColumnVarNameInTable="columnS_Nome" type="xs:string" minOccurs="0" />
+              <xs:element name="S_CPFCNPJ" msprop:Generator_UserColumnName="S_CPFCNPJ" msprop:Generator_ColumnPropNameInTable="S_CPFCNPJColumn" msprop:Generator_ColumnPropNameInRow="S_CPFCNPJ" msprop:Generator_ColumnVarNameInTable="columnS_CPFCNPJ" type="xs:string" minOccurs="0" />
+              <xs:element name="S_Cidade" msprop:Generator_ColumnPropNameInRow="S_Cidade" msprop:Generator_ColumnPropNameInTable="S_CidadeColumn" msprop:Generator_ColumnVarNameInTable="columnS_Cidade" msprop:Generator_UserColumnName="S_Cidade" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
